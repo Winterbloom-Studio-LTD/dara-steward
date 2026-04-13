@@ -1,5 +1,4 @@
 import { createRootRoute, Outlet, Link } from "@tanstack/react-router";
-import { Toaster } from "@/components/ui/toaster";
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -11,20 +10,8 @@ export const Route = createRootRoute({
       </Link>
     </div>
   ),
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Dara Steward" },
-    ],
-  }),
 });
 
 function RootComponent() {
-  return (
-    <>
-      <Outlet />
-      <Toaster />
-    </>
-  );
+  return <Outlet />;
 }
