@@ -1,8 +1,5 @@
-import { createClient } from '@base44/sdk';
-// import { getAccessToken } from '@base44/sdk/utils/auth-utils';
+// Base44 client replaced with Supabase
+// Import the Supabase client from the auto-generated integration
+import { supabase } from '@/integrations/supabase/client';
 
-// Create a client with authentication required
-export const base44 = createClient({
-  appId: "69dc74b1cec6a343c4bee295", 
-  requiresAuth: true // Ensure authentication is required for all operations
-});
+export { supabase };
