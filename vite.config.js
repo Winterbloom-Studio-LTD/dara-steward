@@ -12,7 +12,7 @@ export default defineConfig({
     react(),
   ],
   server: {
-    allowedHosts: true
+    allowedHosts: true,
   },
   resolve: {
     alias: {
