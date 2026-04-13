@@ -4,13 +4,6 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  css: {
-    postcss: {
-      plugins: [
-        (await import('@tailwindcss/postcss')).default,
-      ],
-    },
-  },
   server: {
     allowedHosts: true
   },
